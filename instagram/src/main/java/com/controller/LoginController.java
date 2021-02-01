@@ -47,7 +47,7 @@ public String authUser(String username, HttpServletResponse httpServletResponse)
 	httpServletResponse.setContentType("image/png");
 	ServletOutputStream outputStream=httpServletResponse.getOutputStream();
 	if(photo!=null && photo.length>0) {
-		//writtng photo as a byte array into the response body
+		//writtng    photo as a byte array into the response body
 		outputStream.write(photo);
 	}else {
 		outputStream.write(new byte[] {});
